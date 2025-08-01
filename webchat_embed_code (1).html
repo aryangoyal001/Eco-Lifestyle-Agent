@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Eco Lifestyle Agent 🌱</title>
+</head>
+<body>
+  <h2>Eco Lifestyle Agent Chatbot</h2>
+
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "894917ff-d84b-430e-9fb4-b99ecc34c5e4",
+      region: "jp-tok",
+      serviceInstanceID: "22f8d256-05d2-4f02-b3d5-7a89ea560733",
+      onLoad: async (instance) => { await instance.render(); }
+    };
+    setTimeout(function () {
+      const t = document.createElement('script');
+      t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+</body>
+</html>
