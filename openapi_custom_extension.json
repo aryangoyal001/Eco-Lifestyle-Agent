@@ -1,0 +1,73 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Eco Lifestyle Agent API",
+    "version": "1.0.0",
+    "description": "Mock API for eco-friendly recommendations"
+  },
+  "paths": {
+    "/solar-schemes": {
+      "get": {
+        "summary": "Get government solar schemes",
+        "responses": {
+          "200": {
+            "description": "List of solar schemes",
+            "content": {
+              "application/json": {
+                "example": {
+                  "schemes": [
+                    "PM-KUSUM Scheme",
+                    "Grid-connected Rooftop Solar Programme",
+                    "Surya Mitra Skill Development Programme"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/eco-tips": {
+      "get": {
+        "summary": "Get daily eco-friendly tips",
+        "responses": {
+          "200": {
+            "description": "Eco tips list",
+            "content": {
+              "application/json": {
+                "example": {
+                  "tips": [
+                    "Carry a reusable water bottle",
+                    "Switch off lights when not in use",
+                    "Use cloth bags instead of plastic"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/recycling-guidelines": {
+      "get": {
+        "summary": "Get recycling rules",
+        "responses": {
+          "200": {
+            "description": "Local recycling rules",
+            "content": {
+              "application/json": {
+                "example": {
+                  "rules": [
+                    "Separate wet and dry waste",
+                    "Avoid mixing e-waste",
+                    "Compost kitchen scraps"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
